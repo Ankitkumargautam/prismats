@@ -38,3 +38,21 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 1. Default files.
 
 2. Tailwind Css configuration.
+
+3. Prisma configuration.
+
+- npm i prisma --save-dev
+
+- npx prisma init
+
+// make schema at schema.prisma
+
+- npx prisma db push
+
+- npx prisma studio
+
+- npm i @prisma/client
+
+- npx prisma generate
+
+- remember to setup the database url in the .env file as database string and provide the username and password that you have setup in the time of installation. For the username you can search for postgres folder and the the psql shell and see the username and provide the password

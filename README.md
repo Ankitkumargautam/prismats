@@ -56,3 +56,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - npx prisma generate
 
 - remember to setup the database url in the .env file as database string and provide the username and password that you have setup in the time of installation. For the username you can search for postgres folder and the the psql shell and see the username and provide the password
+
+4. Create operation

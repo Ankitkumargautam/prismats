@@ -36,8 +36,15 @@ const Home = ({notes}: Notes) => {
         },
         method: 'POST'
       }).then(() => {
-        setForm({title: '', content: '', id: ''})
-        refreshData()
+        if(data.id) {
+          deleteNote(data.id)
+          setForm({title: '', content: '', id: ''})
+          refreshData()
+        } else {
+          setForm({title: '', content: '', id: ''})
+          refreshData()
+
+        }
       }
         )
     } catch (error) {
@@ -106,6 +113,7 @@ const Home = ({notes}: Notes) => {
                 <h3 className="font-bold">{note.title}</h3>
                 <p className="text-sm">{note.content}</p>
               </div>
+              <button onClick={() => setForm({title: note.title, content: note.content, id: note.id})} className="bg-blue-500 mr-3 px-3 text-white rounded">Update</button>
               <button onClick={() => deleteNote(note.id)} className="bg-red-500 px-3 text-white rounded">X</button>
 
             </div>

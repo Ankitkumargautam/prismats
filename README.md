@@ -62,3 +62,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 5. Read operation
 
 6. Delete operation
+
+7. Fake update (setForm and first find and delete the item and then create a new item in that place)

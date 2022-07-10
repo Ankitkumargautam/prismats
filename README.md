@@ -36,3 +36,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## All Steps
 
 1. Default files.
+
+2. Tailwind Css configuration.
